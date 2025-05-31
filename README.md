@@ -2,14 +2,14 @@
 
 ## WHY CUSTOM THROTTLING (and why NOT just API Gateway)?
 
-**When you expose your Lambda via a Public Function URL,  
-anyone with the link can launch containers and trigger your infrastructure.**
+When you expose your Lambda via a Public Function URL,  
+anyone with the link can launch containers and trigger your infrastructure.
 
-**To avoid surprise billing and uncontrolled usage,  
-this project demonstrates a custom throttling approach.**
+To avoid surprise billing and uncontrolled usage,  
+this project demonstrates a custom throttling approach.
 
 - **Cooldown:** Each unique URL can be processed only **once every 3 minutes** (`1 request per 3 minutes`).
-- **If you try more often, you'll receive a clear `429 Too Many Requests` error.**
+- If you try more often, you'll receive a clear `429 Too Many Requests` error.
 
 ---
 
@@ -18,7 +18,7 @@ this project demonstrates a custom throttling approach.**
 - **API Gateway** offers built-in throttling, but  
   **Lambda Function URLs** (PublicLink) do **not** have native throttling.
 - For flexibility and demo purposes, I used Lambda PublicLink.
-- **Public endpoints need extra care to prevent abuse and unexpected costs.**
+- Public endpoints need extra care to prevent abuse and unexpected costs.
 
 ---
 
