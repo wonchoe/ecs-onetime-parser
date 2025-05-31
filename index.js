@@ -1,7 +1,8 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-// Отримуємо URL з аргументу командного рядка
+console.log('ARGV:', process.argv);
+
 const url = process.argv[2];
 
 if (!url) {
