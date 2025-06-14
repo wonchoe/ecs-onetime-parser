@@ -1,5 +1,8 @@
 # 🚀 Serverless ECS Task Runner with Lambda Rate Limiting
 
+![Architecture Diagram](assets/ecs-onetime-parser.png)
+
+
 ## WHY CUSTOM THROTTLING (and why NOT just API Gateway)?
 
 When you expose your Lambda via a Public Function URL,  
@@ -71,8 +74,6 @@ Or test with your own URL by replacing `https://cursor.style`:
 ---
 
 ## 🏗️ Solution Architecture
-
-![Architecture Diagram](assets/ecs-onetime-parser.png)
 
 **Flow steps:**
 1. User triggers Lambda via PublicLink (Function URL).
